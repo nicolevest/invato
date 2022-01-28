@@ -37,7 +37,7 @@
                                 <p class="text-center">Al ingresar usted acepta los <a href="#">Terminos de uso de TOLDOPAMBA S.A.S</a></p>
                              </div>
                              <div class="col-md-12 text-center ">
-                                <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                                <button type="button" class="btn btn-success">Ingreso</button>
                              </div>
                              <div class="col-md-12 ">
                                 <div class="login-or">
