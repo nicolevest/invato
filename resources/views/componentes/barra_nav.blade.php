@@ -1,18 +1,57 @@
-<nav>
-    <ul>
-        <li>
-            <a href="">Informes</a>
-        </li>
+<nav class="navbar navbar-expand-lg navbar-dark  bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inventario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Informes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Análisis de almacén</a></li>
+                            <li><a class="dropdown-item" href="#">Informe de inventario</a></li>
+                            <li><a class="dropdown-item" href="#">Informe de operaciones</a></li>
+                        </ul>
+                    </li>
 
-        <li>
-            <a href="">Activos</a>
-        </li>
-        <li>
-            <a href="">Operaciones</a>
-        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Activos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Crear nuevo activo</a></li>
+                            <li><a class="dropdown-item" href="#">Editar activo</a></li>
+                        </ul>
+                    </li>
 
-        <li>
-            <a href="config/{{$username}}">Configuración</a>
-        </li>
-    </ul>
-</nav>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Operaciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Recepción</a></li>
+                            <li><a class="dropdown-item" href="#">Traslados</a></li>
+                            <li><a class="dropdown-item" href="#">Baja de activo</a></li>
+                            <li><a class="dropdown-item" href="#">Ajuste de inventario</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Configuración
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Proveedores</a></li>
+                            <li><a class="dropdown-item" href="#">Lugares</a></li>
+                            <li><a class="dropdown-item" href="#">Contacto departamento TI</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
