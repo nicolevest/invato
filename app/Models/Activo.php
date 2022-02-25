@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Activo extends Model
 {
     use HasFactory;
+    protected $table='activos';
+    protected $primaryKey= 'id';
+    public $timestamps=false;
 }

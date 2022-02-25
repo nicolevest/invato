@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Lugar extends Model
 {
     use HasFactory;
+    protected $table='lugares';
+    protected $primaryKey= 'id';
+    public $timestamps=false;
 }
