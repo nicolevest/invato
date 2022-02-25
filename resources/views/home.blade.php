@@ -15,7 +15,7 @@
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://pizzbur.com/wp-content/uploads/2016/08/Conoce-estas-10-curiosidades-sobre-el-caf%C3%A9-1920.jpg" class="d-block w-100" alt="...">
+                    <img src="https://as1.ftcdn.net/v2/jpg/00/41/45/62/1000_F_41456263_R4jrWkBDyiswxznRWoGN6SryFret8f3Q.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1>Bienvenido</h1>
                         <p>@username</p>
