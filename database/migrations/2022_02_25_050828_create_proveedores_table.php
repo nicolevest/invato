@@ -4,19 +4,21 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateProveedoresTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up() //cuando ejecutamos las migraciones
+    public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('proveedores', function (Blueprint $table) {
             $table->id();
-            $table->string('username',255)->unique();
-            $table->string('password');
+            $table->string('nombre',255);
+            $table->string('procedencia',255);
+            $table->string('contacto_tel',255);
+            $table->string('contacto_email',255);
         });
     }
 
@@ -27,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('proveedores');
     }
 }
