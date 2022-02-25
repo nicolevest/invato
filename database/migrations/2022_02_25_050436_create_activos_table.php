@@ -14,17 +14,17 @@ class CreateActivosTable extends Migration
     public function up()
     {
         Schema::create('activos', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('referencia',255);
             $table->integer('costo');
-            $table->timestamp('fecha_ingreso');
-            $table->timestamp('fecha_compra');
+            $table->dateTime('fecha_ingreso');
+            $table->dateTime('fecha_compra');
             $table->string('codigo_qr',255);
-            $table->unsignedBigInteger('marca');
             $table->unsignedBigInteger('lugar');
+            $table->unsignedBigInteger('marca');
             $table->unsignedBigInteger('tipo');
-            $table->foreign('marca')->references('id')->on('marcas')->onDelete('cascade');
             $table->foreign('lugar')->references('id')->on('lugares')->onDelete('cascade');
+            $table->foreign('marca')->references('id')->on('marcas')->onDelete('cascade');
             $table->foreign('tipo')->references('id')->on('tipos_activos')->onDelete('cascade');
 
 

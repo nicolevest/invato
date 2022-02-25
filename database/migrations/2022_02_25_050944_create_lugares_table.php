@@ -14,7 +14,7 @@ class CreateLugaresTable extends Migration
     public function up()
     {
         Schema::create('lugares', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('nombre',255);
             $table->string('ubicacion',255);
             $table->string('descripcion',255);

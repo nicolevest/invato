@@ -14,9 +14,9 @@ class CreateMarcasTable extends Migration
     public function up()
     {
         Schema::create('marcas', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('nombre',255);
-            $table->integer('proveedor');
+            $table->unsignedBigInteger('proveedor');
             $table->foreign('proveedor')->references("id")->on('proveedores')->onDelete('cascade');
         });
     }

@@ -14,7 +14,9 @@ class CreateTiposActivosTable extends Migration
     public function up()
     {
         Schema::create('tipos_activos', function (Blueprint $table) {
-            $table->id();
+            //maquinaria u equipo, equipo de oficina,equipo de computación y comunicación,
+            //flota y eqipo de transporte, envases y empaques, otros
+            $table->bigIncrements('id');
             $table->string('descripcion');
         });
     }
