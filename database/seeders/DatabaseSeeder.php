@@ -35,11 +35,10 @@ class DatabaseSeeder extends Seeder
     private function seedUsers()
     {
         User::truncate();
-        $users=[
-            ['name '=>' user1', 'email '=>' email1@email.com', 'password'=>bcrypt('password1')],
-            ['name '=>' user2', 'email '=>' email2@email.com', 'password'=>bcrypt('password2')],
-            ['name '=>' user3', 'email '=>' email3@email.com', 'password'=>bcrypt('password3')]
-
+        $users = [
+            ['name' => 'user1', 'email' => 'email1@email.com', 'password'=>bcrypt('password1')],
+            ['name' => 'user2', 'email' => 'email2@email.com', 'password'=>bcrypt('password2')],
+            ['name' => 'user3', 'email' => 'email3@email.com', 'password'=>bcrypt('password3')]
         ];
 
         foreach ($users as $user)
