@@ -44,11 +44,23 @@
                             Configuración
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Proveedores</a></li>
-                            <li><a class="dropdown-item" href="#">Lugares</a></li>
+                            <li><a class="dropdown-item" href="/marcas">Marcas</a></li>
+                            <li><a class="dropdown-item" href="/proveedores">Proveedores</a></li>
+                            <li><a class="dropdown-item" href="/lugares">Lugares</a></li>
                             <li><a class="dropdown-item" href="#">Contacto departamento TI</a></li>
                         </ul>
                     </li>
+
+                    @if( Auth::check() )
+                        <li class="nav-item">
+                            <form action="{{ url('/logout') }}" method="POST" style="display:inline">
+                                {{ csrf_field() }}
+                                <button type="submit" class="btn btn-link nav-link" style="display:inline;cursor:pointer">
+                                    Cerrar sesión
+                                </button>
+                            </form>
+                        </li>
+                    @endif
 
                 </ul>
 

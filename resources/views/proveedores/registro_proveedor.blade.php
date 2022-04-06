@@ -24,7 +24,7 @@
 
 <div>
     <label for="contacto_email">Contacto email</label>
-    <input type="email" name="contacto_tel" id="contacto_tel">
+    <input type="email" name="contacto_email" id="contacto_email">
 </div>
 
 <div>

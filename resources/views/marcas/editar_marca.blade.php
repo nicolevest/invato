@@ -13,8 +13,14 @@
     <input type="text" name="nombre" id="nombre" value="{{ $marca->nombre }}">
 </div>
 <div>
-<label for="proveedor">Proveedor</label>
-    <input type="text" name="proveedor" id="proveedor" value="{{ $marca->proveedor }}">
+<div>
+    <label for="proveedor">Proveedor</label>
+    <select name="proveedor" id="proveedor" value="{{ $marca->proveedor }}">
+        @foreach($proveedores as $proveedor)
+        <option @if($marca->proveedor == $proveedor->id) selected @endif value="{{$proveedor->id}}">{{$proveedor->nombre}}</option>
+        @endforeach
+    </select>
+    <button onclick="location.href = '/registro_proveedor';">Nuevo Proveedor</button>
 </div>
 
 <div>

@@ -10,7 +10,7 @@
 @section('contenido-form')
 <div>
     <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" id="nombre" value="{{ proveedor->nombre }}">
+    <input type="text" name="nombre" id="nombre" value="{{ $proveedor->nombre }}">
 </div>
 <div>
 <label for="procedencia">Procedencia</label>
@@ -18,7 +18,7 @@
 </div>
 <div>
 <label for="contacto_tel">Contacto tel</label>
-    <input type="number" name="contacto_tel" id="contacto_tel"value="{{ $proveedor->contacto_tel}}">
+    <input type="number" name="contacto_tel" id="contacto_tel"value="{{ $proveedor->contacto_tel }}">
 </div>
 <div>
 <label for="contacto_email">contacto email</label>

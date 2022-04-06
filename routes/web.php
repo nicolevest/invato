@@ -15,10 +15,10 @@ Route::group(['middleware' => 'auth'], function() {
 	// Activos ------------------------------------------------------------------------------------
 	Route::get('activos', [ActivosController::class, "getActivos"])->name('activos');
 	// Mostrar Activo
-	Route::get('info_activo/{id_activo}', [ActivosController::class,"getActivo"])->name('info_activo');
+	Route::get('info_activo/{id_activo}', [ActivosController::class, "getActivo"])->name('info_activo');
 	// Registro activo
-	Route::get('registro_activo',[ActivosController::class,"getRegistroActivo"]);
-	Route::post('registro_activo',[ActivosController::class,"postRegistroActivo"]);
+	Route::get('registro_activo', [ActivosController::class, "getRegistroActivo"]);
+	Route::post('registro_activo', [ActivosController::class, "postRegistroActivo"]);
 	// Editar activo
 	Route::get('editar_activo/{id_activo}', [ActivosController::class, 'getEditarActivo']);
 	Route::put('editar_activo/{id_activo}', [ActivosController::class, "putEditarActivo"]);
@@ -34,10 +34,10 @@ Route::group(['middleware' => 'auth'], function() {
 	// Marcas -------------------------------------------------------------------------------------
 	Route::get('marcas', [MarcaController::class, "getMarcas"])->name('marcas');
 	// Mostrar Marca
-	Route::get('info_marca/{id_marca}', [MarcaController::class,"getMarca"])->name('info_marca');
+	Route::get('info_marca/{id_marca}', [MarcaController::class, "getMarca"])->name('info_marca');
 	// Registro marca
-	Route::get('registro_marca',[MarcaController::class,"getRegistroMarca"]);
-	Route::post('registro_marca',[MarcaController::class,"postRegistroMarca"]);
+	Route::get('registro_marca', [MarcaController::class, "getRegistroMarca"]);
+	Route::post('registro_marca', [MarcaController::class, "postRegistroMarca"]);
 	// Editar marca
 	Route::get('editar_marca/{id_marca}', [MarcaController::class, 'getEditarMarca']);
 	Route::put('editar_marca/{id_marca}', [MarcaController::class, "putEditarMarca"]);
@@ -47,10 +47,10 @@ Route::group(['middleware' => 'auth'], function() {
 	// Lugares ------------------------------------------------------------------------------------
 	Route::get('lugares', [LugarController::class, "getLugares"])->name('lugares');
 	// Mostrar Lugar
-	Route::get('info_lugar/{id_lugar}', [LugarController::class,"getLugar"])->name('info_lugar');
+	Route::get('info_lugar/{id_lugar}', [LugarController::class, "getLugar"])->name('info_lugar');
 	// Registro lugar
-	Route::get('registro_lugar',[LugarController::class,"getRegistroLugar"]);
-	Route::post('registro_lugar',[LugarController::class,"postRegistroLugar"]);
+	Route::get('registro_lugar', [LugarController::class, "getRegistroLugar"]);
+	Route::post('registro_lugar', [LugarController::class, "postRegistroLugar"]);
 	// Editar lugar
 	Route::get('editar_lugar/{id_lugar}', [LugarController::class, 'getEditarLugar']);
 	Route::put('editar_lugar/{id_lugar}', [LugarController::class, "putEditarLugar"]);
@@ -60,10 +60,10 @@ Route::group(['middleware' => 'auth'], function() {
 	// Proveedores ---------------------------------------------------------------------------------
 	Route::get('proveedores', [ProveedorController::class, "getProveedores"])->name('proveedores');
 	// Mostrar Proveedor
-	Route::get('info_proveedor/{id_proveedor}', [ProveedorController::class,"getProveedor"])->name('info_proveedor');
+	Route::get('info_proveedor/{id_proveedor}', [ProveedorController::class, "getProveedor"])->name('info_proveedor');
 	// Registro proveedor
-	Route::get('registro_proveedor',[ProveedorController::class,"getRegistroProveedor"]);
-	Route::post('registro_proveedor',[ProveedorController::class,"postRegistroProveedor"]);
+	Route::get('registro_proveedor', [ProveedorController::class, "getRegistroProveedor"]);
+	Route::post('registro_proveedor', [ProveedorController::class, "postRegistroProveedor"]);
 	// Editar proveedor
 	Route::get('editar_proveedor/{id_proveedor}', [ProveedorController::class, 'getEditarProveedor']);
 	Route::put('editar_proveedor/{id_proveedor}', [ProveedorController::class, "putEditarProveedor"]);

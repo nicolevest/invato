@@ -13,14 +13,14 @@
     <input type="text" name="nombre" id="nombre">
 </div>
 </div>
-    <label for="marca">Proveedor</label>
+    <label for="marca">Marca</label>
     <select name="proveedor" id="proveedor">
-        @foreach($proveedors as $proveedor)
+        @foreach($proveedores as $proveedor)
             <option value="{{$proveedor->id}}">{{$proveedor->nombre}}</option>
         @endforeach
     </select>
 
-    <button onclick="location.href = '/registro_proveedor';">Nuevo Proveedor</button>
+    <button onclick="location.href = '/registro_marca';">Nueva Marca</button>
 </div>
 <div>
     <button>Guardar</button>

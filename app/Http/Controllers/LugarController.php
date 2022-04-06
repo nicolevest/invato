@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Lugar;
 
 class LugarController extends Controller
 {
@@ -33,7 +34,7 @@ class LugarController extends Controller
 
   public function getEditarLugar($id_lugar) {
       $lugar = Lugar::findOrFail($id_lugar);
-      return view('lugares.editar_lugar', ["lugar" => $lugar, "proveedor" => $proveedor]);
+      return view('lugares.editar_lugar', ["lugar" => $lugar]);
   }
 
   public function putEditarLugar(Request $req, $id_lugar){

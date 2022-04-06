@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('titulo', 'Activos')
+@section('titulo', 'Proveedores')
 @section('contenido')
     <table>
         <head>
@@ -23,4 +23,7 @@
             @endforeach
         </body>
     </table>
+    <div>
+        <button onclick="location.href = '/registro_proveedor';">Nuevo Proveedor</button>
+    </div>
 @stop

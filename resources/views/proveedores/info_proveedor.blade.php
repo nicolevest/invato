@@ -1,8 +1,8 @@
 @extends('layouts.master')
-@section('titulo', $proveedor->)
+@section('titulo', $proveedor->nombre)
 @section('contenido')
     <div class="campo">
-        <h4>Nombre: {{ $proveedor->nombre}}</h4>
+        <h4>Nombre: {{ $proveedor->nombre }}</h4>
     </div>
     <div class="campo">
         <h4>Procedencia:{{ $proveedor->procedencia }}</h4>
@@ -13,9 +13,8 @@
     </div>
 
     <div class="campo">
-        <h4>contacto_email:{{ $aproveedor->contacto_email }}</h4>
+        <h4>contacto_email:{{ $proveedor->contacto_email }}</h4>
     </div>
-
 
     <div>
         <button onclick="location.href = '/editar_proveedor/{{ $proveedor->id }}';">Editar</button>

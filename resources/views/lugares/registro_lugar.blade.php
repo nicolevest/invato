@@ -1,7 +1,7 @@
 @extends ("layouts.template-form")
 
 @section("titulo","Registro Lugar")
-@section("ruta","/registro_lugar)
+@section("ruta","/registro_lugar")
 
 @section("metodo")
 {{ method_field ('POST') }}

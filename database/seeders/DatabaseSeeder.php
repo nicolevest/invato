@@ -117,9 +117,9 @@ class DatabaseSeeder extends Seeder
     {
         Proveedor::truncate();
         $proveedores=[
-            ['nombre' => "proveedor1", 'procedencia' => "procedencia1", 'contacto_tel' => "contacto1", 'contacto_email' => "email1"],
-            ['nombre' => "proveedor2", 'procedencia' => "procedencia2", 'contacto_tel' => "contacto2", 'contacto_email' => "email2"],
-            ['nombre' => "proveedor3", 'procedencia' => "procedencia3", 'contacto_tel' => "contacto3", 'contacto_email' => "email3"],
+            ['nombre' => "proveedor1", 'procedencia' => "procedencia1", 'contacto_tel' => "7300001", 'contacto_email' => "email1"],
+            ['nombre' => "proveedor2", 'procedencia' => "procedencia2", 'contacto_tel' => "73000012", 'contacto_email' => "email2"],
+            ['nombre' => "proveedor3", 'procedencia' => "procedencia3", 'contacto_tel' => "73000003", 'contacto_email' => "email3"],
 
         ];
         foreach($proveedores as $proveedor)

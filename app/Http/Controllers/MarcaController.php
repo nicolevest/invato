@@ -45,9 +45,9 @@ class MarcaController extends Controller
     public function getEditarMarca($id_marca) {
         $marca = Marca::findOrFail($id_marca);
 
-        $proveedor = Proveedor::all();
+        $proveedores = Proveedor::all();
 
-        return view('marcas.editar_marca', ["marca" => $marca, "proveedor" => $proveedor]);
+        return view('marcas.editar_marca', ["marca" => $marca, "proveedores" => $proveedores]);
     }
 
     public function putEditarMarca(Request $req, $id_marca){
