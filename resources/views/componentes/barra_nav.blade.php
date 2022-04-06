@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark  bg-success">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Invato</a>
+            <a class="navbar-brand" href="/">Invato</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,8 +22,8 @@
                             Activos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Crear nuevo activo</a></li>
-                            <li><a class="dropdown-item" href="#">Editar activo</a></li>
+                            <li><a class="dropdown-item" href="/activos">Mostrar Activos</a></li>
+                            <li><a class="dropdown-item" href="/registro_activo">Crear nuevo activo</a></li>
                         </ul>
                     </li>
 

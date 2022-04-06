@@ -6,41 +6,52 @@ use Illuminate\Http\Request;
 
 class LugarController extends Controller
 {
-    //public function getActivo($id){
-      $activo=Activo::findOrFail($id);
-      return view("activos.info_activo",["activo"=>$activo]);
-    }
-    public function getActivos(){
-      $activos=DB::table("activos")->get();
-      return view("activos.table_activos",["activos"=>$activos]);
-    }
-    public function createActivo($referencia,$costo,$fecha_ingreso,$fecha_compra,$codigo_qr,$lugar,$marca,$tipo){
-      DB::table("activos")->insert([
-          "referencia"=>$referencia,
-          "costo"=>$costo,
-          "fecha_ingreso"=>$fecha_ingreso,
-          "fecha_compra"=>$fecha_compra,
-          "codigo_qr"=>$codigo_qr,
-          "lugar"=>$lugar,
-          "marca"=>$marca,
-          "tipo"=>$tipo
-        ]);
-    }
-    public function updateActivo($id,$referencia,$costo,$fecha_ingreso,$fecha_compra,$codigo_qr,$lugar,$marca,$tipo){
-        $activo=Activo::findOrFail($id);
-        DB::table("activos")->where("id",$activo->id)->update([
-          "referencia"=>$referencia,
-          "costo"=>$costo,
-          "fecha_ingreso"=>$fecha_ingreso,
-          "fecha_compra"=>$fecha_compra,
-          "codigo_qr"=>$codigo_qr,
-          "lugar"=>$lugar,
-          "marca"=>$marca,
-          "tipo"=>$tipo
-          ]);
-    }
-    public function deleteActivo($id){
-      $activo=Activo::findOrFail($id);
-      DB::table("activos")->where("id",$activo->id)->delete();
-    }
+  public function getLugar($id_lugar) {
+      $lugar = Lugar::findOrFail($id_lugar);
+      return view("lugares.info_lugar", ["lugar" => $lugar]);
+  }
+
+  public function getLugares(){
+      $lugares = Lugar::all();
+      return view("lugares.table_lugares", ["lugares" => $lugares]);
+  }
+
+  public function getRegistroLugar(){
+      return view ("lugares.registro_lugar");
+  }
+
+  public function postRegistroLugar(Request $req){
+      $lugar= new Lugar;
+
+      $lugar->nombre = $req->input('nombre');
+      $lugar->ubicacion = $req->input('ubicacion');
+      $lugar->descripcion = $req->input('descripcion');
+      $lugar->save();
+
+      return redirect()->route("info_lugar", ["id_lugar" => $lugar->id]);
+  }
+
+  public function getEditarLugar($id_lugar) {
+      $lugar = Lugar::findOrFail($id_lugar);
+      return view('lugares.editar_lugar', ["lugar" => $lugar, "proveedor" => $proveedor]);
+  }
+
+  public function putEditarLugar(Request $req, $id_lugar){
+      $lugar = Lugar::findOrFail($id_lugar);
+
+      $lugar->nombre = $req->input('nombre');
+      $lugar->ubicacion = $req->input('ubicacion');
+      $lugar->descripcion = $req->input('descripcion');
+      $lugar->save();
+
+      return redirect()->route("info_lugar", ["id_lugar" => $lugar->id]);
+  }
+
+  public function deleteLugar($id_lugar){
+      $lugar = Lugar::findOrFail($id_lugar);
+
+      Lugar::where("id", $lugar->id)->delete();
+
+      return redirect()->route("lugares");
+  }
 }

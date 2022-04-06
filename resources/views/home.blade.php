@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    @include("componentes.barra_nav",array("username"=>"Nicole"))
-
+@extends('layouts.master')
+@section('titulo', 'Home')
+@section('contenido')
     <main role="main">
-
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -64,7 +54,4 @@
         </footer>
     </main>
 
-
-    <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
-</body>
-</html>
+@stop
