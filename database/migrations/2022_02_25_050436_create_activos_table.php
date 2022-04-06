@@ -26,8 +26,6 @@ class CreateActivosTable extends Migration
             $table->foreign('lugar')->references('id')->on('lugares')->onDelete('cascade');
             $table->foreign('marca')->references('id')->on('marcas')->onDelete('cascade');
             $table->foreign('tipo')->references('id')->on('tipos_activos')->onDelete('cascade');
-
-
         });
     }
 
