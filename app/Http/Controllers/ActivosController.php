@@ -96,4 +96,64 @@ class ActivosController extends Controller
 
       return redirect()->route("activos");
     }
+
+	public function getRecepcionActivo()
+	{
+		$activos = Activo::all();
+
+		foreach ($activos as $activo) {
+		  $activo->lugar = Lugar::where('id', $activo->lugar)->get('nombre')[0]->nombre;
+		  $activo->marca = Marca::where('id', $activo->marca)->get('nombre')[0]->nombre;
+		  $activo->tipo = TipoActivo::where('id', $activo->tipo)->get('descripcion')[0]->descripcion;
+		}
+		return view('activos.table_recepcion', ["activos" => $activos]);
+	}
+
+	public function putRecepcionActivo($id_activo)
+	{
+		$activo = Activo::where('id', $id_activo)->firstOrFail();
+		$activo->estado = "Recibido";
+		$activo->save();
+		return redirect()->route('recepcion_act');
+	}
+
+	public function getTrasladoActivo()
+	{
+		$activos = Activo::all();
+
+		foreach ($activos as $activo) {
+		  $activo->lugar = Lugar::where('id', $activo->lugar)->get('nombre')[0]->nombre;
+		  $activo->marca = Marca::where('id', $activo->marca)->get('nombre')[0]->nombre;
+		  $activo->tipo = TipoActivo::where('id', $activo->tipo)->get('descripcion')[0]->descripcion;
+		}
+		return view('activos.table_traslado', ["activos" => $activos]);
+	}
+
+	public function putTrasladoActivo($id_activo)
+	{
+		$activo = Activo::where('id', $id_activo)->firstOrFail();
+		$activo->estado = "En Transito";
+		$activo->save();
+		return redirect()->route('traslado_act');
+	}
+
+	public function getSalidaActivo()
+	{
+		$activos = Activo::all();
+
+		foreach ($activos as $activo) {
+		  $activo->lugar = Lugar::where('id', $activo->lugar)->get('nombre')[0]->nombre;
+		  $activo->marca = Marca::where('id', $activo->marca)->get('nombre')[0]->nombre;
+		  $activo->tipo = TipoActivo::where('id', $activo->tipo)->get('descripcion')[0]->descripcion;
+		}
+		return view('activos.table_salida', ["activos" => $activos]);
+	}
+
+	public function putSalidaActivo($id_activo)
+	{
+		$activo = Activo::where('id', $id_activo)->firstOrFail();
+		$activo->estado = "Dado de baja";
+		$activo->save();
+		return redirect()->route('salida_act');
+	}
 }

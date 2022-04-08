@@ -26,20 +26,20 @@
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="https://i7.uihere.com/icons/429/380/1020/goods-6cac497f8866e87e2b8e997417347f14.png" alt="Generic placeholder image" width="140" height="140">
                     <h2>Recepcion</h2>
-                    <p>Pendientes: 0</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Ver más</a></p>
+                    <p>Pendientes: {{ $recibidos }}</p>
+                    <p><a class="btn btn-secondary" href="/recepcion_act" role="button">Ver más</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="https://iconape.com/wp-content/files/xh/367685/svg/send-logo-icon-png-svg.png" alt="Generic placeholder image" width="140" height="140">
                     <h2>Traslados</h2>
-                    <p>Pendientes: 0</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Ver más</a></p>
+                    <p>Pendientes: {{ $en_transito }}</p>
+                    <p><a class="btn btn-secondary" href="/traslado_act" role="button">Ver más</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="https://icon-library.com/images/x-icon-png/x-icon-png-25.jpg" alt="Generic placeholder image" width="140" height="140">
                     <h2>Dados de baja</h2>
-                    <p>Pendientes: 0</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Ver más</a></p>
+                    <p>Pendientes: {{ $dados_de_baja }}</p>
+                    <p><a class="btn btn-secondary" href="/salida_act" role="button">Ver más</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
 

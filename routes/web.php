@@ -25,10 +25,13 @@ Route::group(['middleware' => 'auth'], function() {
 	// Eliminar activo
 	Route::delete('eliminar_activo/{id_activo}', [ActivosController::class, "deleteActivo"]);
 	// Recepción de activo
+	Route::get('recepcion_act', [ActivosController::class, "getRecepcionActivo"])->name('recepcion_act');
 	Route::put('recepcion_act/{id_activo}', [ActivosController::class, "putRecepcionActivo"]);
 	// Traslado de activo
+	Route::get('traslado_act', [ActivosController::class, "getTrasladoActivo"])->name('traslado_act');
 	Route::put('traslado_act/{id_activo}', [ActivosController::class, "putTrasladoActivo"]);
 	// Dar de baja al activo
+	Route::get('salida_act', [ActivosController::class, "getSalidaActivo"])->name('salida_act');
 	Route::put('salida_act/{id_activo}', [ActivosController::class, "putSalidaActivo"]);
 
 	// Marcas -------------------------------------------------------------------------------------

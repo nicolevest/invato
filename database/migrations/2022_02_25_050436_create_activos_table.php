@@ -20,6 +20,7 @@ class CreateActivosTable extends Migration
             $table->dateTime('fecha_ingreso');
             $table->dateTime('fecha_compra');
             $table->string('codigo_qr',255);
+            $table->string('estado',255)->default('verificado');
             $table->unsignedBigInteger('lugar');
             $table->unsignedBigInteger('marca');
             $table->unsignedBigInteger('tipo');

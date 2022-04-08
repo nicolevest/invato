@@ -23,6 +23,6 @@
 </div>
 
 <div>
-    <button>Guardar</button>
+    <button type="submit">Guardar</button>
 </div>
 @stop

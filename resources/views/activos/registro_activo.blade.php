@@ -38,7 +38,7 @@
         <option value="{{$lugar->id}}">{{$lugar->nombre}}</option>
         @endforeach
     </select>
-    <button onclick="location.href = '/registro_lugar';">Nueva Lugar</button>
+	<button onclick="event.preventDefault(); window.open('/registro_lugar', '_blank');">Nuevo Lugar</button>
 </div>
 <div>
 <label for="marca">Marca</label>
@@ -47,7 +47,7 @@
         <option value="{{$marca->id}}">{{$marca->nombre}}</option>
         @endforeach
     </select>
-    <button onclick="location.href = '/registro_marca';">Nueva Marca</button>
+    <button onclick="event.preventDefault(); window.open('/registro_marca', '_blank');">Nueva Marca</button>
 </div>
 <div>
 <label for="tipo">Tipo</label>
@@ -58,6 +58,6 @@
     </select>
 </div>
 <div>
-    <button>Guardar</button>
+    <button type="submit">Guardar</button>
 </div>
 @stop

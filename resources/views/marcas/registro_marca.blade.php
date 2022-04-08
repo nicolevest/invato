@@ -20,9 +20,9 @@
         @endforeach
     </select>
 
-    <button onclick="location.href = '/registro_marca';">Nueva Marca</button>
+    <button onclick="event.preventDefault(); window.open('/registro_lugar', '_blank');">Nuevo Proveedor</button>
 </div>
 <div>
-    <button>Guardar</button>
+    <button type="submit">Guardar</button>
 </div>
 @stop

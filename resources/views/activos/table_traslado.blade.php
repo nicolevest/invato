@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('titulo', 'Activos')
+@section('titulo', 'Activos en Transito')
 @section('contenido')
     <table>
         <head>
@@ -13,7 +13,6 @@
             <th>Lugar</th>
             <th>Marca</th>
             <th>Tipo</th>
-            <th></th>
         </head>
         <body>
             @foreach($activos as $n => $activo)
@@ -24,16 +23,22 @@
                     <td>{{ $activo->fecha_compra }}</td>
                     <td>{{ $activo->fecha_ingreso }}</td>
                     <td>{{ $activo->codigo_qr }}</td>
-                    <td>{{ $activo->estado }}</td>
+                    <th>{{ $activo->estado }}</th>
                     <td>{{ $activo->lugar }}</td>
                     <td>{{ $activo->marca }}</td>
                     <td>{{ $activo->tipo }}</td>
                     <td><a href="/info_activo/{{ $activo->id }}">Info</a></td>
+					@if($activo->estado != 'En transito')
+						<td>
+							<form action="/traslado_act/{{ $activo->id }}" method="POST">
+								{{ csrf_field() }}
+								{{ method_field('PUT') }}
+								<button type="submit">Trasladar</button>
+							</form>
+						</td>
+					@endif
                 </tr>
             @endforeach
         </body>
     </table>
-    <div>
-        <button onclick="location.href = '/registro_activo';">Nuevo Activo</button>
-    </div>
 @stop
