@@ -6,6 +6,10 @@ body{
   font-family:'Roboto', sans-serif;
   font-size: 1.2em;
 }
+h2,p{
+  color: white;
+  font-weight: 700;
+}
 .botonvermas{
   background-color: rgb(91, 4, 5);
   color: #FFF;
@@ -22,5 +26,9 @@ body{
 .footer{
   margin-top: 10em;
   text-align: center;
+
+}
+.carta{
+  background-color: rgba(91, 4, 5,70%)
 
 }
