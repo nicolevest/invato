@@ -11,5 +11,12 @@
   margin-top: 1em;
   margin-bottom: 1em;
   color: #FFF;
-
+}
+label{
+  color: #FFF;
+  font-weight: bolder;
+}
+.titulo{
+  color: #FFF;
+  font-weight: bolder;
 }

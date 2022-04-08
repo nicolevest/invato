@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('titulo', 'Lugares')
 @section('contenido')
-    <div>
+    <div class="boton">
         <button onclick="location.href = '/registro_lugar';">Nuevo Lugar</button>
     </div>
     <table>

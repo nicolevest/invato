@@ -8,21 +8,24 @@
 @stop
 
 @section("contenido-form")
-<div>
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" id="nombre">
-</div>
-<div>
-    <label for="">Ubicación</label>
-    <input type="" name="ubicacion" id="ubicacion">
+<div class="formulario">
+  <div>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre">
+  </div>
+  <div>
+      <label for="">Ubicación</label>
+      <input type="" name="ubicacion" id="ubicacion">
+  </div>
+
+  <div>
+      <label for="descripcion">Descripción</label>
+      <input type="text" name="descripcion" id="descripcion">
+  </div>
+
+  <div>
+      <button type="submit">Guardar</button>
+  </div>
 </div>
 
-<div>
-    <label for="descripcion">Descripción</label>
-    <input type="text" name="descripcion" id="descripcion">
-</div>
-
-<div>
-    <button type="submit">Guardar</button>
-</div>
 @stop

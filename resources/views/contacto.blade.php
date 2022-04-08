@@ -1,11 +1,11 @@
 @extends('layouts.master')
-@section('titulo', 'Contacto Departamento TI')
+@section('titulo', 'Contácto Departamento TI')
 @section('contenido')
 <div class="contact_form">
 
     <div class="formulario">
-      <h1>Formulario de contacto</h1>
-        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+      <h1 class="titulo">Formulario de contácto</h1>
+        <h3 class="titulo">Escríbenos y en breve nos pondremos en contacto contigo</h3>
 
 
           <form action="submeter-formulario.php" method="post">
@@ -29,12 +29,6 @@
                   <label for="telefone" class="colocar_telefono">Teléfono
                   </label>
                     <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>
-
-                <p>
-                  <label for="website" class="colocar_website">Sitio web
-                  </label>
-                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
                 </p>
 
                 <p>

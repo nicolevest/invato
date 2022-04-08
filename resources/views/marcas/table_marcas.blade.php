@@ -1,6 +1,9 @@
 @extends('layouts.master')
 @section('titulo', 'Marcas')
 @section('contenido')
+  <div class="boton">
+    <button onclick="location.href = '/registro_marca';">Nueva Marca</button>
+  </div>
     <table>
         <head>
             <th>n</th>
@@ -20,7 +23,5 @@
             @endforeach
         </body>
     </table>
-    <div>
-        <button onclick="location.href = '/registro_marca';">Nueva Marca</button>
-    </div>
+
 @stop

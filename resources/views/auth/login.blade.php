@@ -1,5 +1,5 @@
 <div class="container-background">
-  <h1> INVATO</h1>
+  <h1> Invato</h1>
 </div>
 <x-guest-layout>
     <x-auth-card>

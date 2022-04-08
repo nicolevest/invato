@@ -1,6 +1,9 @@
 @extends('layouts.master')
 @section('titulo', 'Proveedores')
 @section('contenido')
+<div class="boton">
+    <button onclick="location.href = '/registro_proveedor';">Nuevo Proveedor</button>
+</div>
     <table>
         <head>
             <th>n</th>
@@ -23,7 +26,5 @@
             @endforeach
         </body>
     </table>
-    <div>
-        <button onclick="location.href = '/registro_proveedor';">Nuevo Proveedor</button>
-    </div>
+
 @stop
