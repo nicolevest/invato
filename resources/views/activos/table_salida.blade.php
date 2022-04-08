@@ -13,6 +13,8 @@
             <th>Lugar</th>
             <th>Marca</th>
             <th>Tipo</th>
+			<th></th>
+			<th></th>
         </head>
         <body>
             @foreach($activos as $n => $activo)
