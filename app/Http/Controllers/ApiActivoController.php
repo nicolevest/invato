@@ -121,7 +121,7 @@ class ApiActivoController extends Controller
 	{
 		try {
 			$activo = Activo::findOrFail($id_activo);
-			$activo->estado = 'En Transito';
+			$activo->estado = 'En transito';
 			$activo->save();
 			$r = [
 				'error' => false,
