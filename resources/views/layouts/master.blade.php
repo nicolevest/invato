@@ -7,6 +7,7 @@
 	<title>Invato - @yield('titulo')</title>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="{{ asset('css/tables.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
 </head>
 <body>
     @include("componentes.barra_nav")
