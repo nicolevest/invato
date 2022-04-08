@@ -1,18 +1,22 @@
 @extends('layouts.master')
 @section('titulo', 'Home')
 @section('contenido')
+
     <main role="main">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="" style="background-color:rgb(40, 9, 7);color: #FFF;">
+        <h1 style="text-align:center;">Bienvenido</h1>
+        <p style="text-align:center;">@username</p>
+      </div>
+        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://as1.ftcdn.net/v2/jpg/00/41/45/62/1000_F_41456263_R4jrWkBDyiswxznRWoGN6SryFret8f3Q.jpg" class="d-block w-100" alt="...">
+                    <img src="https://live.staticflickr.com/4010/4292074142_9c60a8cc2c_b.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>Bienvenido</h1>
-                        <p>@username</p>
+
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
         <!-- Marketing messaging and featurettes
@@ -50,7 +54,7 @@
         <!-- FOOTER -->
         <footer class="container">
             <!-- <p class="float-right"><a href="#">Back to top</a></p> -->
-            <p>© 2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+            <p>© 2022 Toldopamba S.A.S. · <a href="#">Privacidad</a> · <a href="#">Terms</a></p>
         </footer>
     </main>
 

@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Passion+One:wght@700&family=Roboto:ital,wght@0,300;1,400&display=swap');
 tbody{
-  background-color: #c1c1c1;
+  background-color: #FFF;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+tr:nth-child(even) {
+  background-color: #8FB339;
+}
+table{
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid;
+}
+.boton{
+  margin-top: 2em;
+
+}
+button{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4B5842;
+  color: #FFF;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+}
+th{
+  background-color: hsla(359, 92%, 19%, 0.8);
+  padding: 0.5em;
+  margin: 2em;
+  font-weight: bolder;
+  text-align: center;
+}
+td,tr{
+  padding: 0.5em;
+  margin: 2em;
+  text-align: center;
 }
