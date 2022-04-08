@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Invato - @yield('titulo')</title>
     <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css" />
-		<!-- <link href="{{ mix('css/styles.css') }}" rel="stylesheet" type="text/css" /> -->
 </head>
 <body>
     @include("componentes.barra_nav")
