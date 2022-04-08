@@ -127,18 +127,19 @@ class ActivosController extends Controller
 	public function getTrasladoActivo()
 	{
 		$activos = Activo::all();
+		$lugares = Lugar::all();
 
 		foreach ($activos as $activo) {
-			$activo->lugar = Lugar::where('id', $activo->lugar)->get('nombre')[0]->nombre;
 			$activo->marca = Marca::where('id', $activo->marca)->get('nombre')[0]->nombre;
 			$activo->tipo = TipoActivo::where('id', $activo->tipo)->get('descripcion')[0]->descripcion;
 		}
-		return view('activos.table_traslado', ["activos" => $activos]);
+		return view('activos.table_traslado', ["activos" => $activos,"lugares" => $lugares]);
 	}
 
-	public function putTrasladoActivo($id_activo)
+	public function putTrasladoActivo(Request $req, $id_activo)
 	{
 		$activo = Activo::where('id', $id_activo)->firstOrFail();
+		$activo->lugar = $req->input('lugar');
 		$activo->estado = "En transito";
 		$activo->save();
 		return redirect()->route('traslado_act');
