@@ -36,7 +36,7 @@
         <option @if($activo->lugar == $lugar->id) selected @endif value="{{$lugar->id}}">{{$lugar->nombre}}</option>
         @endforeach
     </select>
-    <button onclick="location.href = '/registro_lugar';">Nuevo Lugar</button>
+    <button  onclick="event.preventDefault(); window.open('/registro_lugar', '_blank');">Nuevo Lugar</button>
 </div>
 <div>
     <label for="marca">Marca</label>
@@ -45,7 +45,7 @@
         <option @if($activo->marca == $marca->id) selected @endif value="{{$marca->id}}">{{$marca->nombre}}</option>
         @endforeach
     </select>
-    <button onclick="location.href = '/registro_marca';">Nueva Marca</button>
+    <button  onclick="event.preventDefault(); window.open('/registro_marca', '_blank');">Nueva Marca</button>
 </div>
 <div>
 <label for="tipo">Tipo</label>

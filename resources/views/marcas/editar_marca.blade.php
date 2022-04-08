@@ -21,7 +21,7 @@
           <option @if($marca->proveedor == $proveedor->id) selected @endif value="{{$proveedor->id}}">{{$proveedor->nombre}}</option>
           @endforeach
       </select>
-      <button onclick="location.href = '/registro_proveedor';">Nuevo Proveedor</button>
+      <button  onclick="event.preventDefault(); window.open('/registro_proveedor', '_blank');">Nuevo Proveedor</button>
   </div>
 
   <div>
