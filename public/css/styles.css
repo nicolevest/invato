@@ -11,6 +11,7 @@ div{
   padding-right: 5em;
   padding-left: 5em;
   padding-top: 3em;
+
   display:flex;
   align-items: center;
   flex-direction: column;
