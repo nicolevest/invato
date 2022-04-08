@@ -8,6 +8,8 @@
 @stop
 
 @section('contenido-form')
+<div class="formulario">
+
 <div>
     <label for="referencia">Referencia</label>
     <input type="text" name="referencia" id="referencia" value="{{ $activo->referencia }}">
@@ -57,5 +59,7 @@
 </div>
 <div>
     <button>Guardar</button>
+</div>
+
 </div>
 @stop
