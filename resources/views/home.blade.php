@@ -5,7 +5,7 @@
     <main role="main">
       <div class="" style="background-color:rgb(40, 9, 7);color: #FFF;">
         <h1 style="text-align:center;">Bienvenido</h1>
-        <p style="text-align:center;">@username</p>
+        <p style="text-align:center;">{{ $username }}</p>
       </div>
         <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
