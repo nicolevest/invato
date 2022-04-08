@@ -29,7 +29,7 @@
                     <td>{{ $activo->fecha_ingreso }}</td>
                     <td>{{ $activo->codigo_qr }}</td>
                     <th>{{ $activo->estado }}</th>
-                    <td>{
+                    <td>
 						<select name="lugar" id="lugar" value="{{ $activo->lugar }}">
 							@foreach($lugares as $lugar)
 							<option @if($activo->lugar == $lugar->id) selected @endif value="{{$lugar->id}}">{{$lugar->nombre}}</option>
