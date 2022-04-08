@@ -32,9 +32,9 @@
                             Operaciones
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Recepción</a></li>
-                            <li><a class="dropdown-item" href="#">Traslados</a></li>
-                            <li><a class="dropdown-item" href="#">Baja de activo</a></li>
+                            <li><a class="dropdown-item" href="/recepcion_act">Recepción</a></li>
+                            <li><a class="dropdown-item" href="/traslado_act">Traslados</a></li>
+                            <li><a class="dropdown-item" href="/salida_act">Baja de activo</a></li>
                             <li><a class="dropdown-item" href="#">Ajuste de inventario</a></li>
                         </ul>
                     </li>
