@@ -8,6 +8,8 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="{{ asset('css/tables.css') }}">
 		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/forms.css') }}">
+		<link rel="shortcut icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
 </head>
 <body>
     @include("componentes.barra_nav")

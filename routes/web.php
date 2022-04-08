@@ -72,6 +72,10 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::put('editar_proveedor/{id_proveedor}', [ProveedorController::class, "putEditarProveedor"]);
 	// Eliminar proveedor
 	Route::delete('eliminar_proveedor/{id_proveedor}', [ProveedorController::class, "deleteProveedor"]);
+
+	Route::get('contacto',function(){
+		return view("contacto");
+	});
 });
 
 

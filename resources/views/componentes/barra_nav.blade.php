@@ -47,7 +47,7 @@
                             <li><a class="dropdown-item" href="/marcas">Marcas</a></li>
                             <li><a class="dropdown-item" href="/proveedores">Proveedores</a></li>
                             <li><a class="dropdown-item" href="/lugares">Lugares</a></li>
-                            <li><a class="dropdown-item" href="#">Contacto departamento TI</a></li>
+                            <li><a class="dropdown-item" href="/contacto">Contacto departamento TI</a></li>
                         </ul>
                     </li>
 
